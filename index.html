@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Все для душа и души</title>
+  <link rel="stylesheet" href="normalize.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+</head>
+<body>
+  <h1 class="page__title">Магазин товаров «Все для душа и души»</h1>
+  <header class="page-header">
+    <h2>Шапка</h2>
+  </header>
+
+  <main class="main-page">
+    <section class="catalog">
+      <h2 class="visually-hidden">Каталог товаров</h2>
+
+      <div class="catalog__sort sort">
+        <span class="sort__name">Сортировка по цене:</span>
+
+        <div class="sort__by-category">
+          <button class="sort__button sort__button--increase" type="button">По возрастанию</button>
+          <button class="sort__button sort__button--decrease" type="button">По убыванию</button>
+        </div>
+      </div>
+
+      <ul class="catalog__list">
+      </ul>
+    </section>
+  </main>
+
+
+  <footer class="page-footer">
+    <h2>Подвал</h2>
+  </footer>
+
+  <template id="catalog__item">
+    <li class="catalog__item product">
+      <h3 class="product__title"></h3>
+      <p class="product__price"></p>
+      <p class="product__description"></p>
+    </li>
+  </template>
+
+  <script src="debounce.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

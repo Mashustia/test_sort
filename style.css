@@ -1,0 +1,84 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.content-box-component {
+  box-sizing: content-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  min-width: 320px;
+  color: #000;
+  font-style: normal;
+  background-color: #fff;
+}
+
+.visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  height: auto;
+}
+
+.page__title,
+.page-header,
+.main-page,
+.page-footer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.sort {
+  display: flex;
+}
+
+.sort__name {
+  margin-right: 30px;
+}
+
+.sort__button {
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+.sort__button--active {
+  background-color: bisque;
+}
+
+.catalog__list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.catalog__item {
+  margin-right: 10px;
+  margin-left: 10px;
+}
